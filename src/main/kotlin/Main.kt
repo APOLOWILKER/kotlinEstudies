@@ -1,6 +1,6 @@
 fun main() {
 
-    // GLOSSARIO (var, val, fun, class, double, string, int)
+    // GLOSSARIO (var, val, fun, class, double, string, int, false, true)
 
 
     // val é uma variavel IMUTAVEL
@@ -17,6 +17,7 @@ fun main() {
 
     // ESPAÇOS DE MEMORIA EM TIPOS PRIMTIVOS
 
+    //NUMEROS
     val byte: Byte = 8            // 8-bit
     val short: Short = 16        // 16-bit
     val age: Int = 31            // 32-bit (99% do tempo)
@@ -25,11 +26,14 @@ fun main() {
     val desconto: Float = 31.90f // 32-bit
     val price: Double = 331.90   // 64-bit ponto flutuante (floating point)
 
+    // TEXTO
     val product: String = "Notebook"
+
+    //BOOLEANO (TRUE | FALSE)
+    val booleana = false // 1 byte (8bits)
 
 
 
     println(desconto::class)
-    println(price2::class)
 
 }
