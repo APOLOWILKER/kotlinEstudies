@@ -29,11 +29,12 @@ fun main() {
     * FALSE | FALSE = false
     */
 
+    // Comparar String
+    val produto1 = "iMac"
+    val produto2 = "Iphone"
+    println("comparação 01: " + produto1 == produto2)
+    println("comparação 02: " + produto1 != produto2)
+    println("comparação 03: " + produto1.equals(produto2))
 
-    if (preco == 49 && produto == "Teclado") { // expressoes compostas
-        println("Sucesso")
-    } else {
-        println("Falhou")
-    }
 
 }
