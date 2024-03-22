@@ -20,6 +20,9 @@ fun main() {
     val age: Int = 30 // 32-Bit (99% do tempo)
     val long = 192031982309 // 64bit
 
+    // Mantendo/ reservando todo o espaço na memoria.
+    val memorySafe = 192L // 64bit reservo todos os 64bit da memoria.
+
     var product: String = "macbook"
 
 
