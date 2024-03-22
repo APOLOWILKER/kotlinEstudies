@@ -4,31 +4,21 @@ fun main() {
     // primitivos 80%
     // int, double, string, short, byte, long, float, boolean, char
 
-    // formatação de textos
-    //1.
-    val mensagge = "Olá Apolo, \n seu produto chegou!"
-    println("Tipo 01: \n $mensagge")
-    // 2.
-    val welcome = """
-       Olá Apolo.
-        Seu Produto chegou!!
-    """.trimIndent() // para manter a formatação do código.
-    println("Tipo 02: \n $welcome")
 
+    // CONDIÇÕES (CONTROLE DE FLUXO)
+    val produto = "iPhone"
+    println(produto.length)
+    // se, senão -> DEVE SER UMA EXPRESSÃO BOOLEANA
+    // (< , <= , >, >=, ! )
 
-    // 03.
-    val firstName = "Apolo"
-    val age = 30
-    val price = 300
-    val desconto = 3
-    println("Tipo 03: \n olá " + firstName + " sua idade é " + age)
-
-    // 04
-
-    println("Tipo 04: \n Olá $firstName. Sua idade é $age, " +
-            "e o produto que comprou custa $price então " +
-            "seu desconto é ${(price * desconto)/100} reais \n " +
-            "O valor final do produto é ${price - ((price * desconto)/100)} "
-
-    )
+    val preco = 30_001
+    if (preco >= 20_000 && preco < 30_000) {
+        println("Você ganhou 20% de desconto")
+    } else if (preco > 30_000) {
+        println("Você ganhou 30% de desconto")
+    } else if (preco > 10_000) {
+        println("você ganhou 10% de desconto")
+    } else {
+        println("Você não ganhou desconto")
+    }
 }
