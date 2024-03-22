@@ -32,8 +32,15 @@ fun main() {
     //BOOLEANO (TRUE | FALSE)
     val booleana = false // 1 byte (8bits)
 
+    println(booleana::class)
+
+        // padão CamelCase
+    val mediaDePreco = 22
+
+    val resposta = mediaDePreco.toDouble()
+
+    println(resposta)
 
 
-    println(desconto::class)
 
 }
