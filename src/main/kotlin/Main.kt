@@ -1,25 +1,13 @@
 fun main() {
 
     // GLOSSARIO (var, val, fun, class, double, string, int, false, true)
-    // NUMEROS GRANDES - tem 64 bits
-    val numero: Long = 1_000_000_000 // posso representar 1M assim. Também é um padrão para representar esses numeros grander
-    println(numero)
-
-    // operadores logicos numericos
-    var idade = 30
-    idade = idade + 10
-    println(idade)
-    println(idade - 10)
-    println(idade * 2) // multiplicaçao
-    println(idade / 2) // divisão
-    println(idade % 2) // resto
-
-    // operadores lógicos textuais. o + para concatenar textos
-    var textoIdade = "30"
-    println( "miha idade é $textoIdade" + "e ta tudo bem")
-
-    val booleana = false
-        // false | true
-    println(!booleana) // inventendo o valor
+    // int, double, string, short, byte, long, float, boolean, char
+    // criptografia char type.
+    val name = "Apolo" // uma sequencia ou conjunto de chars
+    val sobreNome = "Silva"
+    val primeiraLetra = 'A' // 1 caracter tem 16 bits de espaço de memoria
+    val pulaLinha = '\n'
+    val adicionaEspaco = '\t' // caracters especiais para formataçao
+    println(name + adicionaEspaco + sobreNome + pulaLinha + primeiraLetra)
 
 }
