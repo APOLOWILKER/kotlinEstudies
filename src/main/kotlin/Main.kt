@@ -6,19 +6,34 @@ fun main() {
 
 
     // CONDIÇÕES (CONTROLE DE FLUXO)
-    val produto = "iPhone"
-    println(produto.length)
+
     // se, senão -> DEVE SER UMA EXPRESSÃO BOOLEANA
     // (< , <= , >, >=, ! )
 
-    val preco = 30_001
-    if (preco >= 20_000 && preco < 30_000) {
-        println("Você ganhou 20% de desconto")
-    } else if (preco > 30_000) {
-        println("Você ganhou 30% de desconto")
-    } else if (preco > 10_000) {
-        println("você ganhou 10% de desconto")
+    val preco = 49
+    val produto = "Teclado"
+
+    // E = &&
+    /*
+    * TRUE | TRUE = true
+    * TRUE | FALSE = false
+    * FALSE | TRUE =  false
+    * FALSE | FALSE = false
+    */
+
+    // OU = ||
+    /*
+    * TRUE | TRUE = true
+    * TRUE | FALSE = true
+    * FALSE | TRUE =  true
+    * FALSE | FALSE = false
+    */
+
+
+    if (preco == 49 && produto == "Teclado") { // expressoes compostas
+        println("Sucesso")
     } else {
-        println("Você não ganhou desconto")
+        println("Falhou")
     }
+
 }
