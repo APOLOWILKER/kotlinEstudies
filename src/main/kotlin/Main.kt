@@ -14,5 +14,12 @@ fun main() {
     println(idade / 2) // divisão
     println(idade % 2) // resto
 
+    // operadores lógicos textuais. o + para concatenar textos
+    var textoIdade = "30"
+    println( "miha idade é $textoIdade" + "e ta tudo bem")
+
+    val booleana = false
+        // false | true
+    println(!booleana) // inventendo o valor
 
 }
