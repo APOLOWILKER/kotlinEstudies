@@ -8,7 +8,7 @@ fun main() {
     // declaração e o corpo da função
     olaMundo()
     functionEnxuta()
-    ageValidate()
+    ageValidate(18)
 }
 
 fun olaMundo() {
@@ -18,10 +18,9 @@ fun olaMundo() {
 
 fun functionEnxuta() = println("Se tem uma linha não precisa de chaves")
 
-fun ageValidate() {
-    val age = 31 // poderia ser um parametro
-    if (age > 18) {
-        println("Pode beber")
+fun ageValidate(age: Int) {
+    if (age >= 18) {
+        println("\n Pode beber! \n")
     }
-    println("Não pode beber")
+    println("\n Não pode beber!\n")
 }
