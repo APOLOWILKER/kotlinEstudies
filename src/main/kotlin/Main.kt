@@ -8,10 +8,7 @@ fun main() {
     // CONDIÇÕES (CONTROLE DE FLUXO)
 
     // se, senão -> DEVE SER UMA EXPRESSÃO BOOLEANA
-    // (< , <= , >, >=, ! )
-
-    val preco = 49
-    val produto = "Teclado"
+    // (< , <= , >, >=, !, ?, ?: )
 
     // E = &&
     /*
@@ -30,12 +27,42 @@ fun main() {
     */
 
     // Comparar String
-    val produto1 = "iMac"
-    val produto2 = "Iphone"
 
-    println("comparação 01: " + (produto1 == produto2))
-    println("comparação 02: " + (produto1 != produto2))
-    println("comparação 03: " + produto1.equals(produto2))
+    // Ponteiros de referencia para  conteudos inexistentes
+    // Segurança de dados
+    /*
+    * Temos 3 situações para armazenar dados na váriavel.
+    * dentro de um endereço de memoria (101101) armazeno, caracter, sequencia de caracter ou numero
+    * Posso armazenar uma sequencia de palavras.
+    * Posso armazenar algo que seja vazio " "
+    * Posso rezervar o espaço e não colocar nada nele = null
+    */
 
+    // OBJETO -> NULL
+
+    var produto: String = "iMac" // variavel multavel
+    produto = "iPhone"
+//    produto = null // não é possivel fazer isso para fazer isso preciso fazer de outro modo.
+
+    // Nulable
+    var example: String? = "nulable" // usado para casos de  campo que podem ou n ser preenchidos
+    println(example)
+    example = null // isso pode fazer
+
+
+    // pode ser que tenha Null
+    var endereco: String? = "Rua A"
+    val qtdExample2 = endereco?.length // safe calls ou optional chaining
+    // ?: - operador elves | Elves operator
+    // para definir um valor padrão caso a expressão não seja correspondida.
+    // val qtdElvesExample = if (endereco != null) endereco.length else 0
+    val qtdElvesExample = endereco?.length ?: 0
+
+    println("Validação condicional:  $qtdExample2" )
+
+    if (endereco != null) {
+        val qtdDeCaracteres = endereco.length
+        println(qtdDeCaracteres)
+    }
 
 }
