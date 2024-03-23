@@ -11,7 +11,6 @@ fun main() {
     println(resposta)
 }
 
-fun somar(): Unit {
-    val resultado = 2 + 3
-    println("Estou somando 2 com 3 e o resultao é: $resultado")
+fun somar(): Int {
+    return 2 + 3
 }
