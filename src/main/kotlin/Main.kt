@@ -3,9 +3,15 @@ fun main() {
     // GLOSSARIO (var, val, fun, class, double, string, int, false, true, null, ?:)
 
     // functions - blocos de códigos reutilizáveis | Organizar código
-    olaMundo()
+
+    val resposta = somar() // call
+
+    // usa série de códigos
+
+    println(resposta)
 }
 
-fun olaMundo() {
-    println("Olá Mundo")
+fun somar(): Unit {
+    val resultado = 2 + 3
+    println("Estou somando 2 com 3 e o resultao é: $resultado")
 }
