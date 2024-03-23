@@ -2,6 +2,8 @@ fun main() {
 
     // GLOSSARIO (var, val, fun, class, double, string, int, false, true, null, ?:)
 
+    // functions, escopo, fluxo, if else, retornos, tipos, manipulação de memoria.
+
     // functions - blocos de códigos reutilizáveis | Organizar código
     // E elea pode ter um tipo de retorno (Double String Int Long) caso n tenha retorno ()
     // escopo de funções
@@ -10,14 +12,16 @@ fun main() {
 //    functionEnxuta()
     // Parametros NOMEADOS
 
-    cadastroDeUsuario(name = "Bruce", age = 18)
-    cadastroDeUsuario(22, "Amy", false)
-    cadastroDeUsuario(name = "Tiago", age = 26)
-    cadastroDeUsuario(name = "Apolo", age = 30, isAdmin = true)
+    val resultadoDaMultiplicacao = multiplicar(2.0, 3.5)
+
+    println("Resultado da some é: ${somar(2, 3)}")
+    println("Resultado da multiplicação é $resultadoDaMultiplicacao")
 }
 
-// a função recebe parametros
-// Podemos adicionar parametros default na function
-fun cadastroDeUsuario(age: Int = 0, name: String, isAdmin: Boolean = false) {
-    println("Usuário cadastrado com idade: $age, nome: $name, admin: $isAdmin")
+fun somar(x: Int, y: Int): Int {
+    return x + y
+}
+
+fun multiplicar(x: Double, y: Double): Double {
+    return  x * y
 }
