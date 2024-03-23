@@ -16,6 +16,17 @@ fun main() {
 // funcao sem retorno igual a main
 fun olaMundo() {
     println("olá Mundo")
+
+    // funções de escopo (RARO de Usar)
+    fun subtracao() {
+        println("uma mensagem para o usuário  informando que comecou a execução")
+        println(2+4)
+    }
+    subtracao()
+
+    // fazer várias coisas (login, registro no banco)
+
+    subtracao()
 }
 
 // funcao com retorno  (String)
