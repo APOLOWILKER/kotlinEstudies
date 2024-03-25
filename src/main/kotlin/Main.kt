@@ -12,8 +12,11 @@ fun main() {
 
     // Molde (TEMPLATE)
     // class (molde responsavel por criar N objetos (propriedade))
-    val userA = Usuario()
-    val userB = Usuario()
+
+    // CONSTRUTOR - Posso pré Preencher uma propriedade dentro
+
+    val userA = User()
+    val userB = User()
 
     userA.name = "Apolo"
     userB.name = "Thiago"
@@ -25,11 +28,8 @@ fun main() {
 
     userA.printUpperCase()
 
-    val buttonSuccess = `Button.kt`()
-    buttonSuccess.text = "Success"
-    buttonSuccess.color = "00FF00"
+    val userALength = userA.getNameLength()
+    println(userALength)
 
-    val buttonCancel = `Button.kt`()
-    buttonCancel.text = "Cancelar"
-    buttonCancel.color = "FF0000"
+    println(userB.getNameLength())
 }
