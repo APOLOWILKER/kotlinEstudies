@@ -15,21 +15,19 @@ fun main() {
 
     // CONSTRUTOR - Posso pré Preencher uma propriedade dentro
 
-    val userA = User()
-    val userB = User()
+    // SOBRECARGA DE CONSTRUTOR (IGUAL A DE FUNÇÃO)
 
-    userA.name = "Apolo"
-    userB.name = "Thiago"
+    val userA = User("Apolo", true)
 
-    userA.printUpperCase()
-    userB.printUpperCase()
+    val nameLength = userA.getNameLength()
+    println(nameLength)
+    println(userA.name)
+    println(userA.isAdmin)
 
-    userA.updateName("Apolo Wilker")
 
-    userA.printUpperCase()
-
-    val userALength = userA.getNameLength()
-    println(userALength)
-
+    val userB = User("Gustavo")
     println(userB.getNameLength())
+    println(userB.name)
+    println(userB.isAdmin)
+
 }

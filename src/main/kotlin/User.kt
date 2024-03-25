@@ -1,6 +1,18 @@
-class User constructor(var name: String = "") {
+
+// class User constructor(var name: String) {
+
+//OPÇÃO 02 - valor padrão
+// class User(var name: String = "") {
+
+
+// OPÇÃO 03 - espera que o construtor receba valor var
+class User(var name: String, var isAdmin: Boolean) {
 //        var name: String = "" // propriedade
         var cpf: CPF = CPF()
+
+        constructor(name: String) : this(name, false) {
+            println("Executei o construtor 2")
+        }
 
         //responsabilidade
         fun printUpperCase() {
