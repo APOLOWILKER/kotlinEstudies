@@ -1,25 +1,11 @@
 fun main() {
-
-    val userA = User("Apolo", true)
-
-    val nameLength = userA.getNameLength()
-    println(nameLength)
-    println(userA.name)
-    println(userA.isAdmin)
-
-
-    val userB = User("Gustavo")
-    println(userB.getNameLength())
-    println(userB.name)
-    println(userB.isAdmin)
-
-    val userC = User()
-    println(userC.name)
-    println(userC.getNameLength())
+    val oldInt = 3
+    val newInt = oldInt.plus(30)
+    println(newInt)
 
 }
 
-
+// no kotlin tudo é tratado como objeto
 
 
 
