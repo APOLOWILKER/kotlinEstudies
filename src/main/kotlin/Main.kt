@@ -1,7 +1,7 @@
 fun main() {
-    val oldInt = 3
-    val newInt = oldInt.plus(30)
-    println(newInt)
+    // diferença de usar sobrecarga de método vs. default values
+
+//    geralmente é mais utilizado o default value como é no java.
 
 }
 
