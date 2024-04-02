@@ -14,6 +14,10 @@ class User(var name: String, var isAdmin: Boolean) {
             println("Executei o construtor 2")
         }
 
+        constructor() : this(isAdmin =  false, name = "Desconhecido") {
+            println("Execute o contrutor 3")
+        }
+
         //responsabilidade
         fun printUpperCase() {
             println(name.uppercase())
