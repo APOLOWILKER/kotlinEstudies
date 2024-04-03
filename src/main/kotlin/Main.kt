@@ -12,6 +12,12 @@ fun main() {
 
     val userA = User()
 
+    // PROPRIEDADE DE OBJETO
+    userA.label = "trocar o texto da label"
+    println(userA.label)
+
+    // PROPRIEDADE DE CLASSE
+
 }
 
 // no kotlin tudo é tratado como objeto

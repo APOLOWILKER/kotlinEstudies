@@ -10,6 +10,11 @@ class User(var name: String, var isAdmin: Boolean) {
 //        var name: String = "" // propriedade
         var cpf: CPF = CPF()
 
+        // propeidade de objeto
+    // var - mutavel
+    // val - imutavel
+        var label = "$name é admin do sistema $isAdmin"
+
 
         /*
         * Em resumo, o construtor primário é usado para inicializar propriedades,
@@ -21,7 +26,7 @@ class User(var name: String, var isAdmin: Boolean) {
         * o que se chama multi-inicialization.
         */
         init {
-            println("Olá")
+            println("Olá $name")
             // geralmente utilizado para inicializar um construtor
             // banco de dados e outros.
         }
@@ -38,8 +43,8 @@ class User(var name: String, var isAdmin: Boolean) {
             println("Executei o construtor 2")
         }
 
-        constructor() : this(isAdmin =  false, name = "Desconhecido") {
-            println("Execute o contrutor 3")
+        constructor() : this( name = "Desconhecido") {
+            println("Execute o construtor 3")
         }
 
         //responsabilidade
