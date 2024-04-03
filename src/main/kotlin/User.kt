@@ -23,8 +23,6 @@ class User(var name: String, var isAdmin: Boolean) {
 
         companion object { // propriedades e comportamentos da classe!!
             var count = 0
-
-            const val MAX_NAME_LENGTH = 8 // Aqui ela pertence a classe
             fun resetCount() {
                 count = 0
             }
@@ -80,9 +78,7 @@ class User(var name: String, var isAdmin: Boolean) {
             println(name.uppercase())
         }
         fun updateName(newName: String) {
-            if (newName.length > MAX_NAME_LENGTH) {
-                // faz o que quiser
-            }
+
             name = "$newName"
             println("Name atualizado")
         }
