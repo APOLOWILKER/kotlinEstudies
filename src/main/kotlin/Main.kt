@@ -1,6 +1,12 @@
 fun main() {
-    // VISIBILIDADE DAS SUAS VARIAVEIS
     val userA = User("Apolo")
+    val userB = User("Dayane")
+
+    User.resetCount()
+    User.count = 9
+    val userC = User("Text")
+
+    // PROPRIEDADES E COMPORTAMENTOS DA CLASSE (NÃAO DO OBJETO)
 
 
 }
@@ -9,7 +15,8 @@ fun main() {
 
 
 
-// GLOSSARIO (var, val, fun, class, double, string, int, false, true, null, ?:, return)
+// GLOSSARIO (var, val, fun, class, double, string, int, false, true, null, ?:, return,
+// constructor, init, private, companion object)
 
 // functions, escopo, fluxo if else, retornos, tipos, manipulação de memoria.
 

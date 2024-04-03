@@ -11,14 +11,31 @@ class User(var name: String, var isAdmin: Boolean) {
         var cpf: CPF = CPF()
 
         // constante do length do name
-        private val MAX_NAME_LENGTH = 8
+        /*
+        * private val MAX_NAME_LENGTH = 8
+        * para acessa essa propriedade preciso de um objeto vivo
+        *
+         */
         // padrão UPPER_CASE - TODA CONSTANTE TEM LETRA MAIUSCULA
         //  palavra private essa várivel só é visivel dentro do objeto
         //  Até consigo utilizar ela, mas n manipular.
 
-        init {
-            println("ola $MAX_NAME_LENGTH")
+
+        companion object { // propriedades e comportamentos da classe!!
+            var count = 0
+
+            const val MAX_NAME_LENGTH = 8 // Aqui ela pertence a classe
+            fun resetCount() {
+                count = 0
+            }
         }
+
+        init {
+            count ++
+            println("Já criou $count")
+        }
+
+
 
 
         // propeidade de objeto
