@@ -10,6 +10,30 @@ class User(var name: String, var isAdmin: Boolean) {
 //        var name: String = "" // propriedade
         var cpf: CPF = CPF()
 
+
+        /*
+        * Em resumo, o construtor primário é usado para inicializar propriedades,
+        * o bloco init é usado para executar código de inicialização e
+        * os construtores secundários são usados quando você precisa
+        * de várias maneiras de inicializar sua classe.
+        * ** a ordem é importante, segue de cima para baixo (isso n acontece para os construtores),
+        * é improvavel você usar mais de 1 init, mas pode utilizar,
+        * o que se chama multi-inicialization.
+        */
+        init {
+            println("Olá")
+            // geralmente utilizado para inicializar um construtor
+            // banco de dados e outros.
+        }
+
+        // construtor secundário pois precisa do this
+    /*
+    *
+    * Construtor Secundário: Em Kotlin, você também pode ter um ou mais construtores secundários.
+    *  Eles são úteis quando você precisa de mais de uma maneira de inicializar sua classe.
+    *  Os construtores secundários precisam delegar para o construtor primário
+    * usando a palavra-chave this.
+    */
         constructor(name: String) : this(name, false) {
             println("Executei o construtor 2")
         }

@@ -1,7 +1,16 @@
 fun main() {
-    // diferença de usar sobrecarga de método vs. default values
+    // Palavra reservada INIT - Parecido com o construtor
+    // serve para inicializar alguma coisa, e
+    //  começa sempre depois que o construtor padrão/primário já foi iniciado
+    //  ai sim podemos usar o init
+    /*
+    * Bloco Init: O bloco init é um bloco de inicialização que é executado
+    * imediatamente após o construtor primário.
+    * Ele é útil quando você precisa executar algum código durante a inicialização
+    * que não pode ser feito no construtor primário.
+    */
 
-//    geralmente é mais utilizado o default value como é no java.
+    val userA = User()
 
 }
 
