@@ -1,22 +1,7 @@
 fun main() {
-    // Palavra reservada INIT - Parecido com o construtor
-    // serve para inicializar alguma coisa, e
-    //  começa sempre depois que o construtor padrão/primário já foi iniciado
-    //  ai sim podemos usar o init
-    /*
-    * Bloco Init: O bloco init é um bloco de inicialização que é executado
-    * imediatamente após o construtor primário.
-    * Ele é útil quando você precisa executar algum código durante a inicialização
-    * que não pode ser feito no construtor primário.
-    */
+    // VISIBILIDADE DAS SUAS VARIAVEIS
+    val userA = User("Apolo")
 
-    val userA = User()
-
-    // PROPRIEDADE DE OBJETO
-    userA.label = "trocar o texto da label"
-    println(userA.label)
-
-    // PROPRIEDADE DE CLASSE
 
 }
 
@@ -41,4 +26,4 @@ fun main() {
 
 // SOBRECARGA DE CONSTRUTOR (IGUAL A DE FUNÇÃO)
 
-// classes, objetos, construtor, funçao, propriedades (var, val String, Int, OutroObjeto)
+// classes, objetos, construtor, funçao, propriedades (var, val String, Int, OutroObjeto, private)

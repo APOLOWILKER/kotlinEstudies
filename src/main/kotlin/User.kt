@@ -10,9 +10,20 @@ class User(var name: String, var isAdmin: Boolean) {
 //        var name: String = "" // propriedade
         var cpf: CPF = CPF()
 
+        // constante do length do name
+        private val MAX_NAME_LENGTH = 8
+        // padrão UPPER_CASE - TODA CONSTANTE TEM LETRA MAIUSCULA
+        //  palavra private essa várivel só é visivel dentro do objeto
+        //  Até consigo utilizar ela, mas n manipular.
+
+        init {
+            println("ola $MAX_NAME_LENGTH")
+        }
+
+
         // propeidade de objeto
-    // var - mutavel
-    // val - imutavel
+        // var - mutavel
+        // val - imutavel
         var label = "$name é admin do sistema $isAdmin"
 
 
@@ -52,6 +63,9 @@ class User(var name: String, var isAdmin: Boolean) {
             println(name.uppercase())
         }
         fun updateName(newName: String) {
+            if (newName.length > MAX_NAME_LENGTH) {
+                // faz o que quiser
+            }
             name = "$newName"
             println("Name atualizado")
         }
